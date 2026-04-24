@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --mint:#0FFCBE;
+  --text:#111;
+  --sub:#555;
+  --border:#eaeaea;
+}
+
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#fff;
+  color:var(--text);
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  background:#fff;
+}
+
+.logo{
+  font-weight:700;
+  font-size:18px;
+}
+
+.nav-links a{
+  margin:0 15px;
+  text-decoration:none;
+  color:var(--sub);
+  font-size:14px;
+}
+
+.nav-links a:hover{
+  color:var(--text);
+}
+
+/* BUTTON */
+.btn{
+  padding:10px 18px;
+  border-radius:6px;
+  background:var(--mint);
+  color:#000;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+  transition:0.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 20px rgba(15,252,190,0.3);
+}
+
+/* HERO */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+.hero h1{
+  font-size:56px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  color:var(--sub);
+  max-width:500px;
+  line-height:1.6;
+}
+
+.hero span{
+  color:var(--mint);
+}
+
+/* SECTIONS */
+.section{
+  margin-top:80px;
+}
+
+.section h2{
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+/* PROJECT CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+
+.card{
+  border:1px solid var(--border);
+  padding:20px;
+  border-radius:10px;
+  transition:0.25s;
+  background:#fff;
+}
+
+.card:hover{
+  border-color:var(--mint);
+  transform:translateY(-4px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+.card p{
+  color:var(--sub);
+  font-size:14px;
+}
+
+/* SKILLS */
+.skills span{
+  display:inline-block;
+  border:1px solid var(--border);
+  padding:6px 12px;
+  margin:5px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+.skills span:hover{
+  background:var(--mint);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px;
+  color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Aditya</div>
+
+  <div class="nav-links">
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <a href="creative.html" class="btn">Creative Mode</a>
+  
+</nav>
+
+<div class="container hero">
+  <h1>Hi, I'm <span>Aditya</span></h1>
+  <p>I build clean, functional, and real-world web applications with focus on performance and simplicity.</p>
+   <a href="Resume.html" class="btn">Resume</a>
+</div>
+
+<div class="container section" id="projects">
+  <h2>Projects</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Nexus Finder D1</h3>
+      <p>Lost phone tracking system with real-time location and alerts.</p>
+    </div>
+
+    <div class="card">
+      <h3>Portfolio Hosting</h3>
+      <p>Platform for students to upload and host their portfolios.</p>
+    </div>
+
+    <div class="card">
+      <h3>Bakery Management</h3>
+      <p>Desktop app to manage inventory, orders, and billing.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container section" id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>PHP</span>
+    <span>MySQL</span>
+    <span>Java</span>
+  </div>
+</div>
+
+<div class="container section" id="contact">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+</div>
+
+<footer>
+  © 2026 Aditya
+</footer>
+
+</body>
+</html>
