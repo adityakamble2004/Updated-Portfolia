@@ -157,6 +157,36 @@ footer{
   padding:40px;
   color:#888;
 }
+
+  .project-link{
+  display:inline-block;
+  margin-top:10px;
+  font-size:13px;
+  font-weight:600;
+  color:var(--mint);
+  text-decoration:none;
+  position:relative;
+  transition:0.2s;
+}
+
+.project-link::after{
+  content:'';
+  position:absolute;
+  width:0%;
+  height:2px;
+  left:0;
+  bottom:-2px;
+  background:var(--mint);
+  transition:0.3s;
+}
+
+.project-link:hover{
+  letter-spacing:0.5px;
+}
+
+.project-link:hover::after{
+  width:100%;
+}
 </style>
 </head>
 
@@ -188,17 +218,20 @@ footer{
     <div class="card">
       <h3>Nexus Finder D1</h3>
       <p>Lost phone tracking system with real-time location and alerts.</p>
+      <a href="https://github.com/adityakamble2004/D1" target="_blank" class="project-link">View on GitHub →</a>
     </div>
 
     <div class="card">
       <h3>Portfolio Hosting</h3>
       <p>Platform for students to upload and host their portfolios.</p>
+      <a href="https://github.com/adityakamble2004/Student-portfolio-hosting-" target="_blank" class="project-link">View on GitHub →</a>
     </div>
 
     <div class="card">
-      <h3>Bakery Management</h3>
-      <p>Desktop app to manage inventory, orders, and billing.</p>
-    </div>
+     <h3>Student Complaint Portal</h3>
+      <p>Web-based system where students can submit issues and complaints directly to the lab head with organized tracking and management.</p>
+     <a href="https://github.com/adityakamble2004/Lab_Management" target="_blank" class="project-link">View on GitHub →</a>
+   </div>
   </div>
 </div>
 
